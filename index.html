@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Weather App</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="shortcut icon" href="image/favicon (1).ico" type="image/x-icon">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body id="body">
+    <!-- ! NAVBAR -->
+    <nav class="navbar navbar-expand-lg nav-underline container py-4">
+        <div class="container-fluid py-0">
+            <a class="navbar-brand d-flex justify-content-center align-items-center" href="#">
+                <div><img src="image/logo.png" alt="logo"></div>
+                <div class="ms-2">
+                    <h1 class="h5 mb-1 text-white">Weather</h1>
+                    <h6 class="text-white h6-logo mb-1 fw-light">tagline goes here</h6>
+                </div>
+            </a>
+            <button class="navbar-toggler border-0 navbar-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-3">
+                        <a class="nav-link link-light fw-bolder" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item px-3 fw-medium">
+                        <a class="nav-link link-light" href="#about">News</a>
+                    </li>
+                    <li class="nav-item px-3 fw-medium">
+                        <a class="nav-link link-light" href="#services">Live cameras</a>
+                    </li>
+                    <li class="nav-item px-3 fw-medium">
+                        <a class="nav-link link-light" href="#Portfolio">Photos</a>
+                    </li>
+                    <li class="nav-item px-3 fw-medium">
+                        <a class="nav-link link-light" href="#blog">Contact</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ! HEADER -->
+    <section id="header" class="d-flex justify-content-center align-items-center">
+        <div class="Search-div d-flex">
+            <!-- <label for="search">s</label> -->
+            <input id="search" type="text" class="form-control position-relative">
+            <button type="submit"
+                class="btn position-absolute d-flex justify-content-center align-items-center">Search</button>
+        </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body d-flex justify-content-center align-items-center">
+                    <h2 class="text-white fw-bold">"This Location is not defind"</h2>
+                </div>
+                <div class="modal-footer py-0">
+                    <button id="closeBtn" onclick="closeBtn()" type="button" class="btn btn-danger"
+                        data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ! WEARTHER CARDS -->
+    <section id="weather" class="text-white">
+        <div class="container">
+            <div class="mb-5 all-card d-flex flex-lg-row flex-column justify-content-center align-items-center">
+
+            </div>
+        </div>
+    </section>
+    <!-- !FOOTER -->
+    <footer id="footer" class="d-flex justify-content-center align-items-center overflow-hidden">
+        <div class="row">
+            <div class="d-flex justify-content-center div-footer">
+                <!-- <label for="m">m</label> -->
+                <input id="m" type="text" class="form-control position-relative">
+                <button type="submit"
+                    class="btn position-absolute d-flex justify-content-center align-items-center">Subscribe</button>
+            </div>
+            <div class="d-flex justify-content-center align-items-center footer-icon">
+                <span class="px-2"><a class="text-decoration-none d-flex justify-content-center align-items-center"
+                        href="#"><i class="fa-brands fa-facebook"></a></i></span>
+                <span class="px-2"><a class="text-decoration-none d-flex justify-content-center align-items-center"
+                        href="#"><i class="fa-brands fa-x-twitter"></a></i></span>
+                <span class="px-2"><a class="text-decoration-none d-flex justify-content-center align-items-center"
+                        href="#"><i class="fa-brands fa-google-plus-g"></a></i></span>
+                <span class="px-2"><a class="text-decoration-none d-flex justify-content-center align-items-center"
+                        href="#"><i class="fa-brands fa-pinterest"></a></i></span>
+            </div>
+            <div>
+                <p class="text-center text-white">Copyright 2014 Company name. Designed by Themezy. All rights reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src='js/main.js'></script>
+</body>
+
+</html>
