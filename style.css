@@ -21,7 +21,7 @@
 /* !MODAL */
 #body .modal-content {
     border-radius: 15px;
-    background-image: url(/image/locational-privacy.jpg);
+    background-image: url(image/locational-privacy.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -29,7 +29,7 @@
 /* !HEADER */
 #header {
     height: 50vh;
-    background-image: url(/image/bg-weather.webp);
+    background-image: url(image/bg-weather.webp);
     background-size: cover;
     background-position-y: 20%;
 }
