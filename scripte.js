@@ -44,6 +44,7 @@ async function getWeather(country) {
     displayData(data);
   } catch (error) {
     messegeError();
+    document.querySelector(".all-card").innerHTML = "";
   }
 }
 
