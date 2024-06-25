@@ -86,7 +86,7 @@ function displayData(data) {
                         <div class="location me-4">${location.name}</div>
                         <div class="current-degree">${dataCurrentDay.temp_c}<sup>o</sup>C</div>
                         <div class="current-forecast-icon"><img src="https:${dataCurrentDay.condition.icon}" alt="icon"></div>
-                        <div class="custom mt-4 mb-2">${dataCurrentDay.condition.text}</div>
+                        <div class="custom my-2">${dataCurrentDay.condition.text}</div>
                         <div class="span-current-forecast">
                             <span class="me-2"><img class="me-2" src="image/icon-umberella.png"
                                     alt="icon-umberella">${dataCurrentDay.cloud}%</span>
