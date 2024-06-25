@@ -38,7 +38,7 @@ async function getWeather(country) {
       ".all-card"
     ).innerHTML = `<div class="loader"></div>`;
     let resp = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=${myAPIKey}&q=${country}&days=7`
+      `https://api.weatherapi.com/v1/forecast.json?key=${myAPIKey}&q=${country}&days=7`
     );
     let data = await resp.json();
     displayData(data);
