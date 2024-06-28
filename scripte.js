@@ -127,4 +127,4 @@ function displayData(data) {
   document.querySelector(".all-card").innerHTML = weatherCards;
 }
 
-getWeather("Egypt");
+getWeather("Paris");
